@@ -6,7 +6,7 @@
     <title>Epo Voucher Details</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Calibri, sans-serif;
             background-color: #F19D69; /* لون خلفية برتقالي جديد */
             color: #333;
         }
@@ -68,13 +68,14 @@
         <p id="date"></p>
         <p id="receiptFrom"></p>
         <p id="amount"></p>
+        <p id="addedBy"></p> <!-- إضافة البيانات الجديدة هنا -->
     </div>
     <hr>
     <div class="footer">
         <div class="left">
-            <p>F: epo gulf<br>
-            Inst: epogulf<br>
-            Web: www.epogulf.com<br>
+            <p>f: epo gulf<br>
+            inst: epogulf<br>
+            web: www.epogulf.com<br>
             Tel: 22272585</p>
         </div>
         
@@ -96,6 +97,7 @@
         document.getElementById('date').textContent = "Date: " + params.get('date');
         document.getElementById('receiptFrom').textContent = "Receipt From: " + params.get('name');
         document.getElementById('amount').textContent = "Amount: " + params.get('amount');
+        document.getElementById('addedBy').textContent = "Added By: " + params.get('addedBy'); // إضافة البيانات الجديدة هنا
     </script>
 </body>
 </html>
