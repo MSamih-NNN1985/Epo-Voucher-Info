@@ -31,7 +31,6 @@
         .center {
             bottom: 10px;
             text-align: center;
-            margin-top: 20px; /* إضافة مسافة بين الديباجات */
         }
         img {
             display: block;
@@ -48,11 +47,18 @@
         .footer {
             margin-top: 20px; /* مسافة قبل الديباجة السفلية */
         }
+        hr {
+            border: none;
+            height: 2px;
+            background-color: #4CAF50; /* لون الخط */
+            margin: 20px 0; /* مسافة فوق وتحت الخط */
+        }
     </style>
 </head>
 <body>
     <h1>Voucher Details</h1>
     <img src="Epo%20logo.png" alt="Epo Logo">
+    <hr>
     <div class="info">
         <p id="referenceNumber"></p>
         <p id="rvNumber"></p>
@@ -60,7 +66,7 @@
         <p id="receiptFrom"></p>
         <p id="amount"></p>
     </div>
-
+    <hr>
     <div class="footer">
         <div class="left">
             <p>f: epo gulf<br>
