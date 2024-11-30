@@ -31,7 +31,7 @@
         .center {
             bottom: 10px;
             text-align: center;
-            margin-top: 40px; /* إضافة مسافة بين الديباجات */
+            margin-top: 20px; /* إضافة مسافة بين الديباجات */
         }
         img {
             display: block;
@@ -42,32 +42,42 @@
         p {
             margin: 5px 0; /* مسافة بين الفقرات */
         }
+        .info {
+            margin-top: 20px; /* مسافة بين الصورة والمعلومات */
+        }
+        .footer {
+            margin-top: 20px; /* مسافة قبل الديباجة السفلية */
+        }
     </style>
 </head>
 <body>
     <h1>Voucher Details</h1>
     <img src="Epo%20logo.png" alt="Epo Logo">
-    <p id="referenceNumber"></p>
-    <p id="rvNumber"></p>
-    <p id="date"></p>
-    <p id="receiptFrom"></p>
-    <p id="amount"></p>
+    <div class="info">
+        <p id="referenceNumber"></p>
+        <p id="rvNumber"></p>
+        <p id="date"></p>
+        <p id="receiptFrom"></p>
+        <p id="amount"></p>
+    </div>
 
-    <div class="left">
-        <p>f: epo gulf<br>
-        inst: epogulf<br>
-        web: www.epogulf.com<br>
-        Tel: 22272585</p>
-    </div>
-    
-    <div class="right">
-        <p>أمغرة الصناعية – قطعة 4 التوسعة الشرقية -<br>
-        قسيمة 279</p>
-    </div>
-    
-    <div class="center">
-        <p>Account Department<br>
-        Mahmoud Samieh Nasr ElDien</p>
+    <div class="footer">
+        <div class="left">
+            <p>f: epo gulf<br>
+            inst: epogulf<br>
+            web: www.epogulf.com<br>
+            Tel: 22272585</p>
+        </div>
+        
+        <div class="right">
+            <p>أمغرة الصناعية – قطعة 4 التوسعة الشرقية -<br>
+            قسيمة 279</p>
+        </div>
+        
+        <div class="center">
+            <p>Account Department<br>
+            Mahmoud Samieh Nasr ElDien</p>
+        </div>
     </div>
 
     <script>
