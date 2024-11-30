@@ -16,11 +16,17 @@
     <script>
         // استخراج المعلمات من عنوان URL
         const params = new URLSearchParams(window.location.search);
-        document.getElementById('referenceNumber').textContent = "Reference Number: " + params.get('ref');
-        document.getElementById('rvNumber').textContent = "RV-NUM: " + params.get('rvnum');
-        document.getElementById('date').textContent = "Date: " + params.get('date');
-        document.getElementById('receiptFrom').textContent = "Receipt From: " + params.get('name');
-        document.getElementById('amount').textContent = "Amount: " + params.get('amount');
+        const ref = params.get('ref') || 'null';
+        const rvnum = params.get('rvnum') || 'null';
+        const date = params.get('date') || 'null';
+        const name = params.get('name') || 'null';
+        const amount = params.get('amount') || 'null';
+
+        document.getElementById('referenceNumber').textContent = "Reference Number: " + ref;
+        document.getElementById('rvNumber').textContent = "RV Number: " + rvnum;
+        document.getElementById('date').textContent = "Date: " + date;
+        document.getElementById('receiptFrom').textContent = "Receipt From: " + name;
+        document.getElementById('amount').textContent = "Amount: " + amount;
     </script>
 </body>
 </html>
