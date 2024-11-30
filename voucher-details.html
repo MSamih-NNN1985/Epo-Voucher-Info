@@ -4,6 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voucher Details</title>
+    <style>
+        .left {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            text-align: left;
+        }
+        .center {
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        .right {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            text-align: right;
+        }
+    </style>
 </head>
 <body>
     <h1>Voucher Details</h1>
@@ -14,7 +34,22 @@
     <p id="receiptFrom"></p>
     <p id="amount"></p>
 
-    <p style="position:fixed;bottom:10px;width:100%;text-align:center;">Mahmoud Samieh Nasr ElDien</p>
+    <div class="left">
+        <p>f: epo gulf<br>
+        inst: epogulf<br>
+        web: www.epogulf.com<br>
+        Tel: 22272585</p>
+    </div>
+    
+    <div class="right">
+        <p>أمغرة الصناعية – قطعة 4 التوسعة ال ر شقية -<br>
+        قسيمة 2</p>
+    </div>
+    
+    <div class="center">
+        <p>Account Department<br>
+        Mahmoud Samieh Nasr ElDien</p>
+    </div>
 
     <script>
         // استخراج المعلمات من عنوان URL
