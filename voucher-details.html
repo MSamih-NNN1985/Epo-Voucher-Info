@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voucher Details</title>
+</head>
+<body>
+    <h1>Voucher Details</h1>
+    <p id="referenceNumber"></p>
+    <p id="rvNumber"></p>
+    <p id="date"></p>
+    <p id="receiptFrom"></p>
+    <p id="amount"></p>
+
+    <script>
+        // استخراج المعلمات من عنوان URL
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById('referenceNumber').textContent = "Reference Number: " + params.get('ref');
+        document.getElementById('rvNumber').textContent = "RV-NUM: " + params.get('rvnum');
+        document.getElementById('date').textContent = "Date: " + params.get('date');
+        document.getElementById('receiptFrom').textContent = "Receipt From: " + params.get('name');
+        document.getElementById('amount').textContent = "Amount: " + params.get('amount');
+    </script>
+</body>
+</html>
