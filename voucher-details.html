@@ -5,30 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voucher Details</title>
     <style>
-        .left {
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .left, .right, .center {
             position: fixed;
+            width: 100%;
+        }
+        .left {
             bottom: 50px;
             left: 10px;
             text-align: left;
         }
         .right {
-            position: fixed;
             bottom: 50px;
             right: 10px;
             text-align: right;
         }
         .center {
-            position: fixed;
             bottom: 10px;
-            width: 100%;
             text-align: center;
-            margin-top: 20px; /* إضافة مسافة بين الديباجات */
+            margin-top: 40px; /* إضافة مسافة بين الديباجات */
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 150px; /* حجم الصورة */
+        }
+        p {
+            margin: 5px 0; /* مسافة بين الفقرات */
         }
     </style>
 </head>
 <body>
     <h1>Voucher Details</h1>
-    <img src="Epo%20logo.png" alt="Epo Logo" style="width:100px;height:100px;">
+    <img src="Epo%20logo.png" alt="Epo Logo">
     <p id="referenceNumber"></p>
     <p id="rvNumber"></p>
     <p id="date"></p>
